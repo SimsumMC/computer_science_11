@@ -9,6 +9,8 @@ from furniture import Furniture
 ### ---------------------------------------------------
 
 class Stuhl(Furniture):
+    def __init__(self, x, y, b, t, w, f, sichtbar):
+        super().__init__(x, y, b, t, w, f, sichtbar)
 
     def GibFigur(self):
         """definiert und transformiert die zu zeichnende Figur"""
