@@ -14,7 +14,7 @@ class Furniture:
     """Klasse Tisch
     ermoeglicht das Zeichnen und Bearbeiten eines
     Tisch-Symbols fuer den Raumplaner"""
-    def __init__(self, x: int = 70, y: int = 10, b: int = 120, t: int = 60, w: int = 0, f: str = "red", sichtbar=True):
+    def __init__(self, x, y, b, t, w, f, sichtbar):
         self.x = x
         self.y = y
         self.b = b
@@ -24,21 +24,6 @@ class Furniture:
         self.s = sichtbar
         if sichtbar:
             self.Zeige()
-    """
-    def __init__(self, x, y, b, t, w, f, sichtbar):
-        self.x = x 
-        self.y = y
-        self.b = b
-        self.t = t
-        self.w = w
-        self.f = f
-        self.s = sichtbar
-        if sichtbar:
-            self.Zeige()
-    """
-
-
-
 
     def GibFigur(self):
         return None
